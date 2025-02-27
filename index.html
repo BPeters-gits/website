@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 <title>Bart Peters</title>
 <meta charset="UTF-8">
@@ -10,24 +11,23 @@
 
 <div class="header" style="height: 200px;">
     <p id="text"></p>
+    <script>
+        var i = 0;
+        var txt = 'SELECT [website] FROM [hobbyProjecten] WHERE [doel] = "Curriculum Vitae"';
+        var speed = 50;
 
-<script>
-    var i = 0;
-    var txt = 'SELECT [website] FROM [hobbyProjecten] WHERE [doel] = "Curriculum Vitae"';
-    var speed = 50;
-
-    function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("text").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, 50);
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("text").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50);
+            }
         }
-    }
 
-    window.onload = function() {
-        typeWriter();
-    };
-</script>
+        window.onload = function() {
+            typeWriter();
+        };
+    </script>
 </div>
 
 <div class="row">
@@ -65,53 +65,53 @@
   </div>
   
   <div class="main">
-    <div class="workicon" style="height:100px; width: 100px;">
+    <div class="workicon">
         <img src="img/work.png" height="50px" width="50px">
     </div>
-    <div class="w1" style="height:220px; max-width:1400px;">
+    <div class="w1" >
         <div class="w1tekst" style="max-width:1200px;" >
             <h3>ilionx | Business Intelligence consultant</h3>
             <p class="w1tekstcenter">
                 <i>feb. 2020 - heden</i>
                 <br><br>
-                Als Business Intelligence consultant vervul ik binnen ilionx verschillende rollen, waaronder projectuitvoering en detachering. Binnen ilionx heb ik ervaring opgedaan in verschillende branches waaronder retail, facilitaire dienstverlening en finance.  Enkele van mijn projecten staan hieronder.
+                Als Business Intelligence consultant vervul ik binnen ilionx verschillende rollen, waaronder projectuitvoering en detachering. Binnen ilionx heb ik ervaring opgedaan in verschillende branches waaronder retail, facilitaire dienstverlening en finance. Ik ben hier blijven plakken na mijn afstudeerproject. Enkele van mijn projecten staan hieronder.
             </p>
         </div>
     </div>
-    <div class="w1-1" style="height:200px; max-width: 800px;">
-        <div class="w1-1tekst" style="max-width:800px;" >
+    <div class="w1-1" >
+        <div class="w1-1tekst">
             <i><h3>APG | Data Analist</h3></i>
             <p class="w1-1tekstcenter">
                 APG is een toonaangevende Nederlandse pensioenuitvoerder en vermogensbeheerder. <br> Binnen APG voer ik als Data Analist verschillende projecten uit, waaronder het creëeren van nieuwe inzichten middels visualisatietooling (PowerBI, Celonis) en LCM voor bestaande oplossingen.
             </p>
         </div>
     </div>
-    <div class="w1-2" style="height:200px; max-width: 800px;">
-        <div class="w1-2tekst" style="max-width:800px;" >
+    <div class="w1-2">
+        <div class="w1-2tekst">
             <i><h3>Vebego | Projectmedewerker, beheer</h3></i>
             <p class="w1-2tekstcenter">
                 Vebego is een Nederlandse internationaal opererende familieonderneming op het gebied van facilitaire dienstverlening en zorg. Voor Vebego heb ik bijgedragen aan de bouw en het onderhoud van een data warehouse op het Azure platform. Hiervoor draai ik mee in een team voor 24/7 technisch support.
             </p>
         </div>
     </div>
-    <div class="w1-3" style="height:200px; max-width: 800px;">
-        <div class="w1-3tekst" style="max-width:800px;">
+    <div class="w1-3">
+        <div class="w1-3tekst">
             <i><h3>Lekkerland | Projectmedewerker</h3></i>
             <p class="w1-3tekstcenter">
                 Lekkerland is een convenience groothandel in verschillende food, -en non-food producten. <br> Voor Lekkerland heb ik bijgedragen aan de opzet van een proof of concept Azure data warehouse, en verdere uitwerking hiervan.
             </p>
         </div>
     </div>
-    <div class="w1-4" style="height:200px; max-width: 800px;">
-        <div class="w1-4tekst" style="max-width:800px;" >
+    <div class="w1-4">
+        <div class="w1-4tekst">
             <i><h3>Munckhof | Projectmedewerker, beheer</h3></i>
             <p class="w1-4tekstcenter">
                 Munckhof is een taxi- en touringcarbedrijf uit Horst en richt zich voornamelijk op personenvervoer en zakenreizen. Hier heb ik beheer en development gedaan op een on-premises data warehouse. <br> Vervolgens heb ik ook bijgedragen aan een traject om dit te migreren naar een Azure data warehouse.
             </p>
         </div>
     </div>
-    <div class="w2" style="height:220px; max-width:1400px;">
-        <div class="w2tekst" style="max-width:1400px;"">
+    <div class="w2">
+        <div class="w2tekst">
             <h3>Ponthus | Stage / jr. BI consultant</h3>
             <p>
                 <i>sep. 2018 - feb. 2020</i>
@@ -120,10 +120,10 @@
             </p>
         </div>
     </div>
-    <div class="studyicon" style="height:100px; width: 100px;">
+    <div class="studyicon">
         <img src="img/study.png" height="50px" width="50px">
     </div>
-    <div class="o1" style="height:220px; max-width:1400px;">
+    <div class="o1">
         <div class="o1tekst" >
             <h3>Zuyd Hogeschool | Bachelor</h3>
             <p>
@@ -134,7 +134,7 @@
             </p>
         </div>
     </div>
-    <div class="o2" style="height:220px; max-width:1400px;">
+    <div class="o2">
         <div class="o2tekst" >
             <h3>SintLucas</h3>
             <p>

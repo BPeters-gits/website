@@ -9,19 +9,23 @@ body {
   margin: 0;
   word-wrap: break-word;
   color: rgb(202, 196, 196);
+  font-size: 16px; /* Default font size */
 }
 
-h2{
+h2 {
   color: black;
 }
 
+/* Header */
 .header {
   padding: 60px;
   text-align: center;
   background: #1A1E22;
   max-height: 200px;
+  margin-top: -40px;
 }
 
+/* Layout */
 .row {  
   display: flex;
   flex-wrap: wrap;
@@ -43,6 +47,7 @@ h2{
   overflow: hidden;
 }
 
+/* Text */
 .introtekst {
   text-align: justify;
   text-justify: inter-word;
@@ -51,6 +56,7 @@ h2{
   overflow: hidden;
 }
 
+/* Boxes */
 .w1, .w2, .o1, .o2 {
   background-color: #292D35;
   border-radius: 50px;
@@ -65,7 +71,7 @@ h2{
   border-radius: 50px;
   padding: 20px;
   overflow: hidden;
-  max-width: 200px;
+  max-width: auto;
   max-height: 100%;
   margin-left: 120px;
   margin: 20px;
@@ -81,6 +87,7 @@ h2{
   margin-right: 20px;
 }
 
+/* Images */
 .profielfoto {
   background-size: 100%;
   background-image: url("img/profielfoto98.png");
@@ -92,24 +99,20 @@ h2{
   transition: transform .2s;
 } 
 
-.workicon {
+.workicon, .studyicon {
   background-size: 100%;
   width: 100%;
   margin: auto;
-  margin-bottom: -50px;
-}
-
-.studyicon {
-  background-size: 100%;
-  width: 100%;
-  margin: auto;
-  margin-bottom: -50px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center; 
 }
 
 .profielfoto:hover {
   transform: scale(1.05);
 }
 
+/* Socials */
 .socials {
   margin-top: 50px;
   margin-left: 50px;
@@ -133,15 +136,42 @@ h2{
     transform: scale(1.05);
 }
 
-@media (max-width: 700px) {
-  .row, .navbar {   
-      flex-direction: column;
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px; 
   }
 
-.w1tekst, .w2tekst, .o1tekst, .o2tekst {
-    left: 0;
-    top: 0;
-    padding: 10px;
+  h2 {
+    font-size: 32px; 
+  }
+
+  .header {
+    padding: 40px;
+  }
+
+  .introtekst, .w1tekst, .w2tekst, .o1tekst, .o2tekst {
+    font-size: 18px; /* Larger content text */
+  }
+
+  .workicon, .studyicon {
+    background-size: 100%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .w1 {
+    background-color: #292D35;
+    border-radius: 50px;
+    padding: 20px;
     max-width: 100%;
-}
+    width: auto;
+    min-height: auto;
+    height: auto; 
+    overflow: visible; 
+    word-wrap: break-word; 
+  }
 }
