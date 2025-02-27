@@ -119,6 +119,7 @@ h2{
   justify-content: center; 
   gap: 20px; 
   margin-left: -10px;
+  margin: auto;
 }
 
 .mail, .linkedin, .locatie {
