@@ -18,7 +18,7 @@ h2{
 .header {
   padding: 60px;
   text-align: center;
-  background: #22372B;
+  background: #1A1E22;
   max-height: 200px;
 }
 
@@ -29,14 +29,14 @@ h2{
 
 .side {
   flex: 30%;
-  background-color: #385544;
+  background-color: #292D35;
   padding: 20px;
   max-width: 100%;
 }
 
 .main {
   flex: 70%;
-  background-color: #f8fdec;
+  background-color: #20232A;
   padding: 20px;
   font-family: 'Trebuchet MS', sans-serif;
   max-width: 100%;
@@ -52,7 +52,7 @@ h2{
 }
 
 .w1, .w2, .o1, .o2 {
-  background-color: #22372B;
+  background-color: #292D35;
   border-radius: 50px;
   padding: 20px;
   max-width: 100%;
@@ -61,7 +61,7 @@ h2{
 }
 
 .w1-1, .w1-2, .w1-3, .w1-4 {
-  background-color: #385544;
+  background-color: #24262F;
   border-radius: 50px;
   padding: 20px;
   overflow: hidden;
@@ -91,6 +91,20 @@ h2{
   margin-top: -100px;
   transition: transform .2s;
 } 
+
+.workicon {
+  background-size: 100%;
+  width: 100%;
+  margin: auto;
+  margin-bottom: -50px;
+}
+
+.studyicon {
+  background-size: 100%;
+  width: 100%;
+  margin: auto;
+  margin-bottom: -50px;
+}
 
 .profielfoto:hover {
   transform: scale(1.05);
