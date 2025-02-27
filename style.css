@@ -92,6 +92,7 @@
   .w1{
     background-color: hsla(0, 25%, 73%, 0.365);
     border-radius: 50px;
+    display: inline-block;
   }
 
   .w1tekst{
