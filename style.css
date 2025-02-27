@@ -29,14 +29,14 @@ h2{
 
 .side {
   flex: 30%;
-  background-color: #30442a;
+  background-color: #385544;
   padding: 20px;
   max-width: 100%;
 }
 
 .main {
   flex: 70%;
-  background-color: #E0E7D9;
+  background-color: #f8fdec;
   padding: 20px;
   font-family: 'Trebuchet MS', sans-serif;
   max-width: 100%;
@@ -61,7 +61,7 @@ h2{
 }
 
 .w1-1, .w1-2, .w1-3, .w1-4 {
-  background-color: #30442a;
+  background-color: #385544;
   border-radius: 50px;
   padding: 20px;
   overflow: hidden;
