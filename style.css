@@ -54,7 +54,7 @@
   /* Profielfoto */
   .profielfoto {
     background-size: 100% 100%;
-    background-image: url("00. Profielfoto.jfif");
+    background-image: url("img/00. Profielfoto.jfif");
     background-color: #aaa;
     border-radius: 500px;
     width: 100%;
