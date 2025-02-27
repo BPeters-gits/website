@@ -18,11 +18,11 @@ h2 {
 
 /* Header */
 .header {
+  font-size: x-large;
   padding: 60px;
   text-align: center;
   background: #1A1E22;
-  max-height: 200px;
-  margin-top: -40px;
+  height: 300px;
 }
 
 /* Layout */
