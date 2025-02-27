@@ -1,149 +1,146 @@
 /* Algemeen */
-
 * {
-    box-sizing: border-box;
-  }
-  
-  /* Style the body */
-  body {
-    font-family: Arial;
-    margin: 0;
-  }
-  
-  h1 {
-    text-align: center;
-  }
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
 
-  /* Header/logo Title */
-  .header {
-    padding: 60px;
-    text-align: center;
-    background: #045746;
-    color: rgb(255, 255, 255);
-    max-height: 200px;
-  }
-  
-  /* Column container */
-  .row {  
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  /* Sidebar/left column */
-  .side {
-    flex: 30%;
-    background-color: hsla(0, 25%, 73%, 0.365);
-    padding: 20px;
-    max-height: 100%;
-  }
+/* Style the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  word-wrap: break-word;
+}
 
-  .introtekst{
-    text-align: justify;
-    text-justify: inter-word;
-    margin: 50px;
-  }
-  
-  /* Main column */
-  .main {
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-    font-family: helvetica;
-  }
-  
-  /* Profielfoto */
-  .profielfoto {
-    background-size: 100% 100%;
-    background-image: url("img/00. Profielfoto.jfif");
-    background-color: #aaa;
-    border-radius: 500px;
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-    margin-top: -120px;
-    transition: transform .2s;
-  }
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #045746;
+  color: rgb(255, 255, 255);
+  max-height: 200px;
+}
 
-  .profielfoto:hover{
-    transform: scale(1.2);
-  }
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .socials{
-    margin-top: 50px;
-    margin-left: 50px;
-  }
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: hsla(0, 25%, 73%, 0.365);
+  padding: 20px;
+  max-width: 100%;
+}
 
-  .mail{
-    margin-top: -100px;
-    text-align: center;
-  }
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  font-family: Helvetica, sans-serif;
+  max-width: 100%;
+  overflow: hidden;
+}
 
-  .linkedin{
-    margin-left: 130px;
-    text-align: center;
-  }
+/* Ensure text elements stay inside their divs */
+.introtekst {
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 50px;
+  max-width: 100%;
+  overflow: hidden;
+}
 
-  .locatie{
-    margin-left: 235px;
-    margin-top: -100px;
-    text-align: center;
-  }
+.w1, .w2, .o1, .o2 {
+  background-color: hsla(0, 42%, 14%, 0.678);
+  border-radius: 50px;
+  padding: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 20px;
+}
 
-  .w1{
-    background-color: hsla(0, 25%, 73%, 0.365);
-    border-radius: 50px;
-    display: inline-block;
-  }
+.w1-1, .w1-2, .w1-3, .w1-4 {
+  background-color: #2438346b;
+  border-radius: 50px;
+  padding: 20px;
+  overflow: hidden;
+  max-width: 200px;
+  max-height: 100%;
+  margin-left: 120px;
+  margin: 20px;
+}
 
-  .w1tekst{
-    position: relative;
-    top: 30px;
-    left: 30px;
-    word-wrap: break-word;
-  }
+.w1tekst, .w2tekst, .o1tekst, .o2tekst {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  margin-right: 20px;
+}
 
-  .w1tekstcenter{
-    margin-right: 20px;
-  }
+/* Profielfoto */
+/* .profielfoto {
+  background-size: 100% 100%;
+  background-image: url("img/00. Profielfoto.jfif");
+  background-color: #aaa;
+  border-radius: 500px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: -120px;
+  transition: transform .2s;
+} */
 
-  .w2{
-    background-color: hsla(0, 25%, 73%, 0.365);
-    border-radius: 50px;
-  }
+.profielfoto {
+  background-size: 100%;
+  background-image: url("img/profielfoto98.png");
+  background-color: #aaa;
+  width: 100%;
+  padding: 0px;
+  margin: auto;
+  margin-top: -100px;
+  transition: transform .2s;
+} 
 
-  .w2tekst{
-    position: relative;
-    top: 30px;
-    left: 30px;
-    word-wrap: break-word;
-  }
+.profielfoto:hover {
+  transform: scale(1.05);
+}
 
-  .o1{
-    background-color: hsla(0, 25%, 73%, 0.365);
-    border-radius: 50px;
-  }
+/* Socials */
+.socials {
+  margin-top: 50px;
+  margin-left: 50px;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Centers the child elements horizontally */
+  gap: 20px; /* Adds spacing between the elements */
+  margin-left: -10px;
+}
 
-  .o1tekst{
-    position: relative;
-    top: 30px;
-    left: 30px;
-    word-wrap: break-word;
-  }
+/* Ensure child elements are centered */
+.mail, .linkedin, .locatie {
+  text-align: center;
+  max-width: 100%;
+}
 
-  .o2{
-    background-color: hsla(0, 25%, 73%, 0.365);
-    border-radius: 50px;
-  }
 
-  .o2tekst{
-    position: relative;
-    top: 30px;
-    left: 30px;
-  }
-
-  /* Responsive layout */
-  @media (max-width: 700px) {
-    .row, .navbar {   
+/* Responsive layout */
+@media (max-width: 700px) {
+  .row, .navbar {   
       flex-direction: column;
-    }
   }
+
+.w1tekst, .w2tekst, .o1tekst, .o2tekst {
+    left: 0;
+    top: 0;
+    padding: 10px;
+    max-width: 100%;
+}
+}
