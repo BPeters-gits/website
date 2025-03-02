@@ -13,17 +13,22 @@
     <p id="text"></p>
     <script>
         var i = 0;
-        var txt = 'SELECT [website] FROM [hobbyProjecten] WHERE [doel] = "Curriculum Vitae"';
-        var speed = 50;
-
+        var txt = 'SELECT [website] FROM [hobbyProjecten] WHERE [doel] = "Curriculum Vitae";';
+        
+        // Generate a random speed between 30 and 100 milliseconds
+        function getRandomSpeed(min, max) {
+            return Math.floor(Math.random() * (180 - 50 + 1)) + min;
+        }
+    
         function typeWriter() {
             if (i < txt.length) {
                 document.getElementById("text").innerHTML += txt.charAt(i);
                 i++;
-                setTimeout(typeWriter, 50);
+                // Use a random speed for each character
+                setTimeout(typeWriter, getRandomSpeed(30, 100)); // Random speed between 30 and 100 ms
             }
         }
-
+    
         window.onload = function() {
             typeWriter();
         };
