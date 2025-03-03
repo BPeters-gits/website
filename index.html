@@ -15,7 +15,6 @@
         var i = 0;
         var txt = 'SELECT [website] FROM [hobbyProjecten] WHERE [doel] = "Curriculum Vitae";';
         
-        // Generate a random speed between 30 and 100 milliseconds
         function getRandomSpeed(min, max) {
             return Math.floor(Math.random() * (180 - 50 + 1)) + min;
         }
@@ -24,15 +23,43 @@
             if (i < txt.length) {
                 document.getElementById("text").innerHTML += txt.charAt(i);
                 i++;
-                // Use a random speed for each character
-                setTimeout(typeWriter, getRandomSpeed(30, 100)); // Random speed between 30 and 100 ms
+
+                setTimeout(typeWriter, getRandomSpeed(30, 100)); 
+            } else {
+ 
+                setTimeout(function() {
+                    clearTextAndShowDots(); 
+                }, 500);
             }
+        }
+    
+        function clearTextAndShowDots() {
+            var loadingElement = document.getElementById("text");
+    
+            // Clear the text (SQL query)
+            loadingElement.innerHTML = '';
+    
+            var dotCount = 0;
+            
+            function addDot() {
+                dotCount++;
+                if (dotCount <= 3) {
+                    loadingElement.innerHTML = '.'.repeat(dotCount); 
+                    setTimeout(addDot, 500); 
+                } else {
+                    setTimeout(function() {
+                        loadingElement.innerHTML = "1 record found";
+                    }, 500);
+                }
+            }
+    
+            addDot();
         }
     
         window.onload = function() {
             typeWriter();
         };
-    </script>
+    </script>            
 </div>
 
 <div class="row">
